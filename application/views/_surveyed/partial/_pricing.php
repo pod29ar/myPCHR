@@ -1,0 +1,1 @@
+<p class="label alert radius"><i class="fa fa-star" style="color:#ecc85e;"></i> Please note that the price shown is for illustration purpose only. It is not representing the real pricing in any way.</p>

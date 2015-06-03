@@ -1,0 +1,80 @@
+// gps tracker copy
+.gps-image
+	width: 100%
+
+.gps-desc,
+.gps-time,
+.gps-eta
+	color: $subtleCol
+	font-size: 90%
+.gps-head
+	margin-top: 0
+	margin-bottom: 25px
+.gps-desc
+	padding-right: 20px
+	display: block
+.gps-id
+	margin-top: 0
+	font-family: $fontNormal
+	font-size: 100%
+	text-align: right
+	color: $dominosRed
+.gps-time
+	float: left
+.gps-eta
+	float: right
+
+// gps tracker
+$grand-tracker-bg: #e4e8e8
+.tracker
+	border: 1px solid $sidebarBorder
+	+border-radius($globalRadius)
+	.gps-step,
+	.gps-time,
+	.tracker-point li
+		+transition(all 200ms ease)
+	.tracker-copy
+		padding: 15px
+		text-align: center
+		color: $subtleCol
+		span
+			font-size: 80%
+		.gps-step
+			color: $dominosBlue
+	.tracker-point
+		margin-left: -0.3125em
+		margin-right: -0.3125em
+		border-top: 1px solid $sidebarBorder
+		li
+			padding: 5px
+			font-size: 90%
+			text-align: center
+			color: $subtleCol
+			border-right: 1px solid $sidebarBorder
+			&:last-child
+				border: none
+			&.active
+				background: $dominosBlueLight
+				color: $white
+			&.done
+				background: lighten($dominosBlueLight, 5%)
+				color: $white
+
+	&.grand-tracker
+		border: none
+		.tracker-point
+			border: none
+			background: $grand-tracker-bg
+			overflow: hidden
+			+border-radius(5px)
+			li
+				padding: 25px 5px
+				font-size: 400%
+				&.active
+					background: $dominosRed
+.tracker-text
+	margin-top: 10px
+	li
+		font-size: 90%
+		color: $subtleCol
+		text-align: center

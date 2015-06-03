@@ -1,0 +1,238 @@
+{
+	"kuala_lumpur": [
+	{
+		"title": "BANDAR SRI DAMANSARA",
+		"address": "G7, Wisma KSCH, 3 Jln Cempaka SD12/1A, Bdr Sri Damansara PJU 9, 52200 Kuala Lumpur"
+	},
+	{
+		"title": "BANGSAR",
+		"address": "No 6 & 6A, Jalan Telawi, Bangsar Baru, 59100 Kuala Lumpur"
+	},
+	{
+		"title": "BDR SERI PERMAISURI",
+		"address": "105, Jln Dwitasik 1, Dataran Dwitasik, Bandar Seri Permaisuri, Cheras, 56000 Wilayah Persekutuan"
+	},
+	{
+		"title": "DAMANSARA HEIGHTS",
+		"address": "No.42, Grd Flr, Jalan Medan Setia 2, Damansara Heights 50490 Kuala Lumpur"
+	},
+	{
+		"title": "HILLPARK",
+		"address": "1-21, Ground Floor,Centrio No 1, Jalan Pantai Murni, Pantai Hillpark, 59200 Kuala Lumpur"
+	},
+	{
+		"title": "JALAN IMBI",
+		"address": "No 155, Ground Floor Jalan Imbi 55100 Kuala Lumpur"
+	},
+	{
+		"title": "JALAN IPOH",
+		"address": "No.A-2-1, Blok A, Upper Ground Floor, Level VIVA, No.378, Jalan Ipoh, 51200 Kuala Lumpur"
+	},
+	{
+		"title": "JALIL JAYA",
+		"address": "7,Blok 6, Jalan Jalil Jaya 7, 57000 Jalil Link, Bukit Jalil"
+	},
+	{
+		"title": "KEPONG",
+		"address": "Lot 4086, Mukim Batu Jalan Kepong, Kepong 52100 Kuala Lumpur"
+	},
+	{
+		"title": "MALURI",
+		"address": "138, Grd Flr, Jalan Jejaka Taman Maluri 55100 Kuala Lumpur"
+	},
+	{
+		"title": "MANJALARA",
+		"address": "67, Gound floor, Jalan 3/62A, Bandar Manjalara, 52200 Kepong, Kuala Lumpur"
+	},
+	{
+		"title": "MELAWATI",
+		"address": "235 & 235A, Jalan Bandar 13 Taman Melawati, Kuala Lumpur"
+	},
+	{
+		"title": "MID VALLEY",
+		"address": "Unit LG-012, Lower Ground Flr Mid Valley Megamall, Lingakaran Syed Putra, 59200 Kuala Lumpur"
+	},
+	{
+		"title": "MONT KIARA",
+		"address": "G3, Mont Kiara Meridin No.19, Jalan Duta Kiara, Mt Kiara 54050 Kuala Lumpur"
+	},
+	{
+		"title": "PANDAN INDAH",
+		"address": "L2/57, Ground Floor, Pandan Kapital, Jalan Pandan Indah, 55100 Kuala Lumpur"
+	},
+	{
+		"title": "PEARL POINT",
+		"address": "Lot 1.0.17, Ground Floor, Pearl Point Shopping Mall, Batu 5 Jln Kelang Lama, 58000 KL "
+	},
+	{
+		"title": "Setapak",
+		"address": "Unit B2, Ground Floor, Plaza Crystalville, Setapak, 50480 Kuala Lumpur"
+	},
+	{
+		"title": "TAMAN CONNAUGHT",
+		"address": "133, Ground Floor, Jalan Sarjana Taman Connaught, Cheras 56000 Kuala Lumpur"
+	},
+	{
+		"title": "TTDI",
+		"address": "No.10,Ground Floor, Jalan Tun Mohd Fuad, 60000 Taman Tun Ismail, Kuala Lumpur"
+	},
+	{
+		"title": "WANGSA MAJU",
+		"address": "No.5, Block 1A, Jalan Wangsa Delima 13, Wangsa Maju 53300 Wangsa Maju Kuala Lumpur "
+	},
+	{
+		"title": "WELD",
+		"address": "Lot L1-13, Level 1, The Weld 76, Jalan Raja Chulan 50200 Kuala Lumpur"
+	}],
+	"selangor": [
+		{
+			"title": "AMPANG POINT",
+			"address": "Lot G-19, Ground Floor Ampang Point Shopping Centre Jln Memanda 3, Ampang Point 68000 Ampang, Selangor"
+		},
+		{
+			"title": "AMPANG WATERFRONT",
+			"address": "23A, Jalan AWF3, Ampang Water Front, 68000 Ampang"
+		},
+		{
+			"title": "BANDAR BARU KLANG",
+			"address": "No.2A-G, Jalan Tiara 2A, Bandar baru Klang, 41150 Klang, Selangor "
+		},
+		{
+			"title": "BANDAR BOTANIC",
+			"address": "15,1st Floor, Jalan Remia 3/KS 6, Bandar Botanik, 41200 Klang"
+		},
+		{
+			"title": "BANDAR TEKNOLOGI KAJANG",
+			"address": "30, Jalan 1/2, Seksyen 1, Bandar Teknologi Kajang, 43500 Semenyih"
+		},
+		{
+			"title": "BANGI",
+			"address": "No.40, Jalan Medan PB2B, Sek 9, Pusat Bandar Baru Bangi, 43650 Bandar Baru Bangi, Selangor"
+		},
+		{
+			"title": "BANGI 2",
+			"address": "26, Jalan 3/69, Seksyen 3, 43650 Bandar Baru Bangi, Selangor"
+		},
+		{
+			"title": "BANTING",
+			"address": "No.300, Jalan Sultan Abdul Samad, 42700 Banting"
+		},
+		{
+			"title": "BATU CAVES",
+			"address": "Lot A8, Giant Hypermarket Batu Caves, Lot 10243, Jln Batu Caves, 68100 Batu Caves, Selangor "
+		},
+		{
+			"title": "BUKIT JELUTONG",
+			"address": "2G Jalan Serambi U8/24, Bukit Jelutong, 40150 Shah Alam, Selangor"
+		},
+		{
+			"title": "DAMANSARA JAYA",
+			"address": "82, Ground Floor, Jalan SS22/25, Damansara Jaya 47400 Petaling Jaya Selangor "
+		},
+		{
+			"title": "DAMANSARA PERDANA",
+			"address": "A-G-02 Block A Neo Damansara, Jalan PJU8/1, Bandar Damansara Perdana, 47820 Petaling Jaya, Selangor"
+		},
+		{
+			"title": "JALAN GASING",
+			"address": "121, Ground Floor, Jalan Gasing, 46000 Petaling Jaya Selangor"
+		},
+		{
+			"title": "KAJANG",
+			"address": "1G, Jalan Semenyih 43300 Kajang Selangor "
+		},
+		{
+			"title": "KOTA DAMANSARA",
+			"address": "28-G, Jalan Teknologi 3/9, Bistari De Kota, Kota Damansara, 47810 Petaling Jaya"
+		},
+		{
+			"title": "KOTA KEMUNING",
+			"address": "13G, Jalan Anggerik Vanila X31/X Kota Kemuning 40460 Shah Alam, Selangor "
+		},
+		{
+			"title": "PORT KLANG",
+			"address": "No.170, Persiaran Raja Musa, 42000 Port Klang"
+		},
+		{
+			"title": "PUCHONG JAYA",
+			"address": "No.29, Jalan Kenari 1, Bandar Puchong Jaya, 47100 Puchong Selangor "
+		},
+		{
+			"title": "PUCHONG UTAMA",
+			"address": "No.10, Jalan PU 7/2, Pusat Bandar Puchong Utama, 47140 Puchong, Selangor"
+		},
+		{
+			"title": "PUTRA HEIGHTS",
+			"address": "3, Jalan Mahkota 7/6c, Putra Heights, 47650 Subang Jaya"
+		},
+		{
+			"title": "PUTRA PERMAI",
+			"address": "27, Jalan BPP 8/1, Bandar Putra Permai, 43300 Seri Kembangan"
+		},
+		{
+			"title": "RAWANG",
+			"address": "AG-6, Jalan Idaman 1, Taman Rawang Idaman, 48000, Rawang "
+		},
+		{
+			"title": "RIANA GREEN",
+			"address": "G08 & G09, Riana Green Plaza Jln Tropicana Utara, Tropicana Golf & Country Resort, 47410 Selangor "
+		},
+		{
+			"title": "SELAYANG",
+			"address": "No.8, Jalan SJ6, Taman Selayang Jaya, 68100 Batu Caves"
+		},
+		{
+			"title": "SERI KEMBANGAN",
+			"address": "Ground Floor, No. 19, Jalan Perusahaan 2, 43300 Seri Kembangan,Selangor."
+		},
+		{
+			"title": "SETIA ALAM",
+			"address": "Unit 18-1, Jalan Setia Prima S U13/S, Setia Alam, Sek U13, 40170 Shah Alam "
+		},
+		{
+			"title": "SHAH ALAM",
+			"address": "No.22, Ground Floor, Jalan Tengku Ampuan Zabedah D/9D, Seksyen 9 40100 Shah Alam, Selangor "
+		},
+		{
+			"title": "SHAH ALAM SEK 23",
+			"address": "65 , Jalan Pelabur B 23/B, Section 23, 40300 Shah Alam, Selangor"
+		},
+		{
+			"title": "SRI MANJA",
+			"address": "12-1 Jalan PJS 3/63, Taman Sri Manja, 46000 Petaling Jaya"
+		},
+		{
+			"title": "SS2",
+			"address": "135, Jalan SS2/24, 43700 Petaling Jaya"
+		},
+		{
+			"title": "SUBANG JAYA SS 12",
+			"address": "No. 1, Grd Flr, Jalan SS 12/1B 47500 Subang Jaya Selangor "
+		},
+		{
+			"title": "SUBANG PERDANA",
+			"address": "No.1, Tingkat Bawah , Jalan Dinar B U3/B, Seksyen U3, 40150 Shah Alam, Selangor."
+		},
+		{
+			"title": "SUNGAI LONG",
+			"address": "26G, Jalan SL1/11, Bandar Sungai Long, Jalan Cheras 43300 Kajang, Selangor"
+		},
+		{
+			"title": "SUNWAY PJ",
+			"address": "48, Grd Flr, Jalan PJS 8/2 Mentari Business Park, Bdr Sunway, 46150 Selangor"
+		},
+		{
+			"title": "TAMING JAYA",
+			"address": "35G, Grd Flr, Jln Sg Besi Indah 1/19 Tmn Sg Besi Indah,43300 Seri Kembangan Selangor"
+		},
+		{
+			"title": "TUN HUSSEIN ONN",
+			"address": "No 30-A, Jalan Suarasa 8/4, Bandar Tun Hussein Onn, 43200 Selangor"
+		},
+		{
+			"title": "USJ",
+			"address": "55-1, Jalan USJ 9/5S Subang Business Centre UEP Subang Jaya, 47610 Petaling Jaya, Selangor"
+		}
+
+	]
+}

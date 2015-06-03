@@ -1,0 +1,104 @@
+.order-section
+	margin-bottom: 20px
+	padding: 40px
+	background: $white
+	border: 1px solid $sidebarBorder
+	+border-radius($globalRadius)
+	.os-head
+		margin: 15px 0 20px
+	.steps.step-datetime
+		background: none
+
+.table-conf
+	width: 100%
+	border: none
+	thead
+		background: $dominosBlueLight
+		tr
+			th
+				padding: 15px 10px
+				font-weight: 300
+				color: $white
+	tbody
+		tr
+			background: $white
+			border-bottom: 1px solid $sidebarBorder
+			+transition(all 200ms ease)
+			&.tc-item.new
+				background: $subtleWhite
+			&.no-border
+				border: none
+			&.total-price
+				border-top: 3px solid $dominosBlueLight
+			&:last-child
+				padding: 15px 0
+				border: none
+			td
+				.item-name
+					font-size: 120%
+					color: $normalCol
+					margin: 0
+				.item-detail
+					font-size: 90%
+					color: $subtleCol
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+					li
+						margin: 0
+						padding: 0
+						font-size: 90%
+						color: $subtleCol
+				.item-control
+					input,
+					.button
+						width: 100%
+					.button
+						padding: 10px 5px
+				&.price
+					text-align: right
+
+.upsell-combo
+	.button
+		padding: 10px 15px
+		// margin-top: 10px
+
+.steps.deltake-end
+	padding: 0
+	margin-right: 50px
+	background: none
+	border: none
+.addr-cont
+	padding: 15px
+	position: relative
+	margin-right: 50px
+	border: 1px solid darken($sidebarBorder, 5%)
+	.user-address
+		font-style: initial
+		.addr-head
+			font-size: 150%
+	.ac-fake
+		position: absolute
+		top: 15px
+		right: 15px
+
+
+.img-attack,
+.pay-attack
+	height: 400px
+.img-attack
+	background: #252d2f
+	padding: 11px
+	padding-top: 30px
+	.img-holder
+		img
+			margin: 0 auto
+			display: block
+
+.payment-method
+	margin-bottom: 20px
+
+.confirm-order
+	width: 100%
+	margin: 0

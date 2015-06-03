@@ -1,0 +1,49 @@
+=sauce-image($color: true)
+	$top: 0
+	$url: '../img/misc/sauce_sprite.png'
+	@if $color == true
+		$top: -38px
+	@else
+		$top: 2px
+	&.all
+		background: url($url) $white 3px $top no-repeat
+	&.signature
+		background: url($url) $white -47px $top no-repeat
+	&.spicy
+		background: url($url) $white -104px $top no-repeat
+	&.secret
+		background: url($url) $white -157px $top no-repeat
+	&.smoky
+		background: url($url) $white -214px $top no-repeat
+	&.pesto
+		background: url($url) $white -264px $top no-repeat
+
+=meat-image($color: true)
+	$top: 0
+	$url: '../img/misc/meat_sprite.png'
+	@if $color == true
+		$top: -39px
+	@else
+		$top: 3px
+	&.all
+		background: url($url) $white 3px $top no-repeat
+	&.surcharge
+		background: url($url) $white -49px $top no-repeat
+	&.chicken
+		background: url($url) $white -99px $top no-repeat
+	&.beef
+		background: url($url) $white -162px $top no-repeat
+	&.seafood
+		background: url($url) $white -221px $top no-repeat
+	&.vegetarian
+		background: url($url) $white -281px $top no-repeat
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content

@@ -1,0 +1,56 @@
+orderData: {
+	"item": "pizza/side/beverage/condiment",
+	"name": "item name",
+	"price": 12.34,
+	"total": 24.68,
+	"type": "first class/speciality/make your own/half & half/chicken/bread/dessert/"
+},
+crust: {
+	"name": "name",
+	"image": "path/to/image.img",
+	"desc": "descriptions of the item",
+	"size": "personal regular large extra-large",
+	"price": "0.00 0.00 0.00 0.00"
+},
+pizza: {
+	"name": "Tropical Sambal Prawn",
+	"image": "assets/img/pizza_fake/09.jpg",
+	"desc": "Succulent Prawns marinated in herbs bla bla bla",
+	"type": "first class",
+	"size": "regular large extra-large",
+	"price": "0.00 3.50 5.00 7.00",
+	"indicator":[
+		"surcharge",
+		"spicy",
+		"seafood"
+	],
+	"new": "TRUE"
+},
+side: {
+	"name": "Starter Box",
+	"image": "assets/img/starter_box_duo.png",
+	"desc": "Roasted Chicken Drummet (6pcs), Crazy bla bla bla",
+	"type": "chicken",
+	"price": "25.60 19.80"
+},
+beverage: {
+	"name": "7Up 1.5L",
+	"image": "assets/img/revive.jpg",
+	"desc": "7Up",
+	"size": "bottle",
+	"price": "3.50 2.80"
+},
+meal: {
+	"name": "Deal A",
+	"price": "30.00",
+	"save": "19.60",
+	"size": "4",
+	// items
+	"items": [{
+		"type": "pizza",
+		"size": "regular",
+		"desc": "",
+		"amount": "2",
+		"image": "http://placehold.it/90x90"
+	}]
+}

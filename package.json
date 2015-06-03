@@ -1,0 +1,28 @@
+{
+  "name": "dominos-enhanced",
+  "version": "0.0.0",
+  "description": "dominos enhancement script",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browserify": "~4.2.1",
+    "gulp": "~3.8.6",
+    "gulp-jshint": "~1.7.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.1",
+    "vinyl-source-stream": "~0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@teratocloud.dynu.com:taufan/dominos-ui-enhancement.git"
+  },
+  "keywords": [
+    "dominos",
+    "pizza"
+  ],
+  "author": "taufan@terato.com",
+  "license": "ISC"
+}

@@ -1,0 +1,101 @@
+$sc1: #e8e8e8
+$sc2: lighten($sc1, 5%)
+$sc3: lighten($sc1, 8%)
+$sc4: #ffffff
+.deltaker
+	border: 1px solid darken($sc1, 5%)
+	+border-radius($globalRadius)
+.tabs-content
+	margin: 0
+	.content
+		width: 100%
+		padding: 0
+		form
+			margin: 0
+.steps
+	padding: 15px
+	&.step-deltake
+		background: $sc1
+		border-bottom: 1px solid darken($sc1, 2%)
+	&.step-datetime
+		background: $sc2
+		border-bottom: 1px solid darken($sc2, 2%)
+	&.step-address
+		background: $sc3
+		border-bottom: 1px solid darken($sc3, 2%)
+	&.step-contact
+		background: $sc4
+		border-bottom: 1px solid darken($sc4, 2%)
+	&.step-button
+		background: $sc1
+
+	.step-head
+		margin-bottom: 15px
+
+	&.step-deltake
+		.tabs
+			width: 100%
+			position: relative
+			dd
+				width: 50%
+				text-align: center
+				&.tab-del a
+					+border-radius($globalRadius 0 0 $globalRadius)
+				&.tab-tak a
+					+border-radius(0 $globalRadius $globalRadius 0)
+				> a
+					padding: 10px
+					background: $white
+					color: $subtleCol
+					border: 1px solid darken($sidebarBorder, 5%)
+				&.active > a
+					background: $buttonTertiary
+					color: $white
+					border-color: darken($buttonTertiary, 5%)
+			.separator
+				padding: 10px 12px
+				position: absolute
+				left: 50%
+				top: 1px
+				margin-left: -23.5px
+				background: $dominosRed
+				color: $white
+				border: 1px solid darken($dominosRed, 5%)
+				+border-radius(100%)
+	&.step-address
+		.step-head span
+			margin-top: 7px
+		.addr-ls
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				padding: 15px 0
+				border-bottom: 1px solid darken($sc1, 5%)
+				cursor: pointer
+				&.selected
+					background: lighten($dominosBlueLight, 60%)
+			.addr
+				position: relative
+				.addr-position
+					position: absolute
+					left: -22px
+				h5
+					margin-top: 0
+					color: $dominosBlueLight
+				p
+					margin: 0
+					font-size: 75%
+					color: $subtleCol
+	&.step-button
+		.button
+			margin: 0
+.spc-button
+	padding: 10px 20px
+	margin: 0
+	background: $white
+	color: $dominosBlueLight
+	border: 1px solid $sidebarBorder
+	&:hover
+		color: $dominosBlue
+		background: $subtleWhite

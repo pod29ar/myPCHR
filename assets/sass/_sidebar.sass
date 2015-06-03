@@ -1,0 +1,96 @@
+// side-promo
+.side-title
+	text-align: center
+.side-promo
+	width: 100%
+	height: $sidePromoHeight
+	overflow: hidden
+	padding: 20px
+	background: $sidebarBg
+	border: 1px solid $sidebarBorder
+	+border-radius($globalRadius)
+	.cars-nav
+		width: 100%
+		padding: 0
+		margin: 0
+		font-size: 200%
+		color: $intoGray
+		background: $sidebarBg
+		border: 1px solid $sidebarBorder
+		&.prev
+			margin-bottom: 5px
+			+border-radius($globalRadius $globalRadius 0 0)
+		&.next
+			margin-top: 5px
+			+border-radius(0 0 $globalRadius $globalRadius)
+	.caroufredsel_wrapper
+		height: 327px
+	.sc-item
+		padding: 5px 0
+
+
+.side-personal
+	.side-title
+		font-size: 90%
+		text-align: left
+		margin-top: 30px
+		&:first-child
+			margin-top: 0
+		.st-anchor
+			font-family: $fontNormal
+			font-weight: 300
+
+	// order info
+	.order-info
+		.oi-addr
+			font-size: 90%
+			span
+				padding-bottom: 5px
+				display: block
+		.order-addr
+			color: $dominosBlue
+			font-weight: 700
+	.oi-anchor
+		width: 100%
+		margin: 0
+		padding: 10px 5px
+
+	// order/favorite history
+	.order-favorite
+		border: 1px solid $sidebarBorder
+		+border-radius($globalRadius)
+		.of-item
+			padding: 15px 30px
+			p
+				font-size: 90%
+				margin: 0
+				&.of-timestamp
+					color: $subtleCol
+					font-size: 75%
+			.button
+				margin-top: 10px
+				margin-bottom: 0
+				padding: 10px 5px
+	.orbit-container
+		.orbit-prev,
+		.orbit-next
+			width: 25px
+			height: 100%
+			top: 0
+			margin: 0
+			background: $white
+			border: 1px solid $sidebarBorder
+			&:hover
+				background: $subtleWhite
+		.orbit-prev
+			+border-radius($globalRadius 0 0 $globalRadius)
+			> span
+				margin-right: 0
+				right: 6px
+				border-right-color: $subtleCol
+		.orbit-next
+			+border-radius(0 $globalRadius $globalRadius 0)
+			> span
+				margin-left: 0
+				left: 6px
+				border-left-color: $subtleCol

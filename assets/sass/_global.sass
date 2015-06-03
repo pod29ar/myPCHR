@@ -1,0 +1,217 @@
+$font-directory: "../../assets/fonts/knockout-htf49-liteweight"
++font-face("Knockout", font-files("#{$font-directory}.woff", "#{$font-directory}.ttf", "#{$font-directory}.svg"), "#{$font-directory}.eot")
+
+$fontNormal: "PT Sans", sans-serif
+$fontHeavy: "Knockout", sans-serif
+
+html,
+body
+	width: 100%
+	height: 100%
+	min-height: 100%
+	margin: 0
+	padding: 0
+	font-family: $fontNormal
+	color: $normalCol
+	background: $bodyBg
+body
+	min-width: 1200px
+	&.special-package
+		min-width: 0
+		.roller
+			margin-top: 0
+			+box-shadow(0 8px 0 0 darken($bodyBg, 5%))
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family: $fontHeavy
+	color: $normalCol
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea
+	border-color: $inputBorder
+	+border-radius($globalRadius)
+	+box-shadow(inset 0 0 2px rgba($black, .2))
+	&:active,
+	&:focus
+		background: darken($white, 2%)
+		border-color: $inputBorder
+		+box-shadow(inset 0 1px 3px rgba($black, .2))
+
+a
+	color: $dominosBlueLight
+	+transition(all 200ms ease)
+	&:hover
+		color: lighten($dominosBlueLight, 10%)
+
+.button,
+.button-tertiary
+	background: $buttonTertiary
+	color: $white
+	&:hover,
+	&:active,
+	&:focus
+		background: darken($buttonTertiary, 10%)
+.button.act-cancel
+	background: #c6c9ce
+	color: $white
+	&:hover,
+	&:active,
+	&:focus
+		background: darken(#c6c9ce, 10%)
+.button-green
+	background: $dominosGreen
+	color: $white
+	&:hover,
+	&:active,
+	&:focus
+		background: darken($dominosGreen, 10%)
+
+
+// sticky footer
+.wrapper
+	width: 100%
+	min-height: 100%
+	margin: 0 auto (-$wrapperFoot)
+	padding: 132px 0 $wrapperFoot
+.footer
+	height: $footerHeight
+
+.clearfix
+	+clearfix
+
+.page-head
+	margin: 0 0 60px
+
+// Select2.js hack
+.sel-cho
+	width: 100%
+	.select2-choice
+		height: auto
+		padding: 8px
+		font-size: 90%
+		color: $subtleCol
+		line-height: normal
+		border-color: $inputBorder
+		background: $white
+		+border-radius($globalRadius)
+		+box-shadow(inset 0 0 2px rgba($black, .2))
+		.select2-arrow
+			border: none
+			background: transparent
+	&.select2-dropdown-open
+		.select2-choice
+			border-bottom: none
+			+box-shadow(none)
+	&.select2-drop-above
+		.select2-choice
+			border-bottom: 1px solid
+			border-color: $inputBorder
+			background: $white
+			+border-radius(0 0 $globalRadius $globalRadius)
+.select2-drop
+	+border-radius(0 0 $globalRadius $globalRadius)
+	&.select2-drop-above
+		+border-radius($globalRadius $globalRadius 0 0)
+	&,
+	&.select2-drop-above
+		border-color: $inputBorder !important
+	.select2-result
+		font-size: 80%
+
+$switch: #efefef
+.float-switch
+	max-width: 150px
+	position: fixed
+	top: 190px
+	left: 0
+	.captain,
+	.first-mate,
+	.sharp-shooter
+		+transition(all 200ms ease)
+	.captain
+		padding: 0 5px
+		margin: 0
+		font-size: 170%
+		line-height: normal
+		color: $dominosRed
+	.first-mate
+		padding: 0 5px
+		margin: 0
+		color: $dominosBlue
+		font-size: 110%
+		font-weight: 700
+		line-height: normal
+	.sharp-shooter
+		padding: 7px 5px
+		margin-top: 5px
+		background: $dominosBlueLight
+		color: $switch
+		+border-radius(0 $mealRadius $mealRadius 0)
+	.pirate-ship
+		display: block
+		&:hover
+			.captain,
+				+text-shadow(3px 3px 0 rgba($dominosRed, .2))
+			.first-mate
+				+text-shadow(3px 3px 0 rgba($dominosBlue, .2))
+			.sharp-shooter
+				color: $white
+				background: lighten($dominosBlueLight, 5%)
+	&.sc
+		top: 190px
+	&.ad,
+	&.cc
+		top: 340px
+
+.text-red
+	color: $dominosRed
+
+.reveal-modal
+	padding: 0.625rem
+	padding-top: 3.75rem
+	.close-reveal-modal
+		right: 0.625rem
+		padding-right: 0.625rem
+		padding-left: 0.688rem
+		color: $subtleCol
+		background: #efefef
+		+border-radius(5px)
+		+box-shadow(0 5px 0 0 $subtleCol)
+
+// progress bar
+$border-shadow: rgba($black, .6)
+.progress
+	height: 40px
+	padding: 0
+	border: 0
+	position: relative
+	background: darken($bodyBg, 5%)
+	margin: 0
+	.indicator
+		width: 100%
+		position: absolute
+		top: 0
+		text-align: center
+		.ind-text
+			padding: 4px 8px
+			color: $bodyBg
+			background: rgba($black, .3)
+			font-size: 20px
+			line-height: 40px

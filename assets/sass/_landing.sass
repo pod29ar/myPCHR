@@ -1,0 +1,139 @@
+// main-promo
+.main-promo
+	margin-bottom: $breather
+// main carousel
+.main-cars
+	width: 100%
+	height: $sidePromoHeight
+	overflow: hidden
+	.mc-item
+		width: 100%
+		height: $sidePromoHeight
+		overflow: hidden
+		+border-radius($globalRadius)
+		img
+			width: 100%
+			height: 100%
+
+// coupons promo
+.coupons-promo
+	height: 275px
+	margin-bottom: $breather
+.boxer
+	height: 275px
+	+box-sizing(border-box)
+// newsletter subscriber
+.nwsltr-container
+	padding: 30px 50px
+	background: $nwsltrBg
+	border: 1px solid $nwsltrBorder
+	+border-radius($globalRadius)
+	form
+		margin: 0
+	.nwsltr-head
+		margin-top: 0
+		margin-bottom: 25px
+		text-align: center
+		color: $dominosRed
+	.nwsltr-email
+		height: auto
+		margin: 0
+		padding: 15px
+		line-height: normal
+	.nwsltr-button
+		margin: 0
+		+border-radius($globalRadius)
+		@extend .button-tertiary
+	.nwsltr-caption
+		margin-top: 10px
+		margin-bottom: 20px
+		font-size: 80%
+		color: $subtleCol
+// gps tracker
+.gps-container
+	padding: 20px
+	background: $gpsBg
+	color: $gpsCol
+	text-align: center
+	+border-radius($globalRadius)
+	.gps-head
+		color: #7f1b27
+	.gps-subhead
+		color: $white
+		font-weight: 300
+// coupon
+.coupon-container
+	padding: 20px
+	background: $couponBg
+	color: $couponCol
+	text-align: center
+	+border-radius($globalRadius)
+	form
+		margin: 0
+	.cou-head
+		color: $white
+	.cou-excerpt
+		padding: 0 10px
+		font-size: 80%
+	.coupon-code
+		height: auto
+		padding: 15px
+		margin: 0
+	.coupon-button
+		margin: 0
+		+border-radius($globalRadius)
+		@extend .button-tertiary
+
+// flipboard
+// .flipboard
+// 	margin-bottom: 20px
+.flips
+	width: 100%
+	height: 220px !important
+	overflow: hidden
+	z-index: 10
+	+border-radius($globalRadius)
+	.bb-item
+		height: 220px !important
+
+
+// menu after login
+// subtle notification
+.subtle-msg
+	margin-bottom: 10px
+	padding: 30px 10px
+	font-size: 90%
+	text-align: center
+	border: 1px solid $sidebarBorder
+	a
+		color: $subtleCol
+// menu available
+.mc-menu
+	height: 0
+	padding-bottom: 100%
+	margin-bottom: 10px
+	position: relative
+	background: $white
+	// border: 1px solid $sidebarBorder
+	overflow: hidden
+	+border-radius($globalRadius)
+	+box-shadow(0 0 0 1px $sidebarBorder)
+	a
+		display: block
+	.mc-header
+		width: 100%
+		padding: 15px 10px
+		position: absolute
+		top: 0
+		background: $white
+	.mc-content
+		img
+			max-width: auto
+			width: 100%
+			height: 100%
+		.button
+			margin: 0
+			padding: 10px 15px
+			position: absolute
+			bottom: 10px
+			right: 10px

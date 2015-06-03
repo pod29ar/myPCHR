@@ -1,0 +1,203 @@
+// login box
+// .login-container
+// 	margin-top: 60px
+.login-modal
+	width: 70%
+	padding: 0
+	margin-left: -35%
+	border: 3px solid $dominosBlueLight
+.login-box
+	background: $sidebarBg
+	border: 1px solid $sidebarBorder
+	&,
+	label
+		color: $subtleCol
+	.columns
+		padding: 0
+	.left-top
+		border-bottom: 1px solid
+		border-right: 1px solid
+	.left-bottom
+		border-right: 1px solid
+	.right-top
+		left: -1px
+		border-left: 1px solid
+	.sct
+		padding: 25px
+		border-color: $sidebarBorder
+
+	// contents
+.button
+	+border-radius($globalRadius)
+	&.logreg
+		margin: 0
+		padding: 13px 30px
+		font-weight: 700
+		background: $buttonTertiary
+		&:hover
+			background: darken($buttonTertiary, 10%)
+.fb-btn
+	width: 100%
+	margin: 0
+	font-size: 130%
+	background: $facebookBlue
+	&:hover
+		background: darken($facebookBlue, 5%)
+.user-cont
+	.uc-or
+		width: 45px
+		height: 45px
+		padding-top: 15px
+		margin: -40px auto 20px
+		font-size: 100%
+		color: $white
+		text-align: center
+		background: $normalCol
+		+border-radius(100%)
+	input,
+	.prefix
+		height: 50px
+		line-height: 40px
+		padding: 5px 10px
+	input
+		font-size: 100%
+		+border-radius(0 $globalRadius $globalRadius 0)
+	.prefix
+		font-size: 140%
+		color: $dominosBlue
+		+border-radius($globalRadius 0 0 $globalRadius)
+	.login-link
+		a
+			display: block
+			margin-bottom: 5px
+			margin-left: 5px
+			font-size: 80%
+		+ div .logreg
+			margin-right: 5px
+.lc-head
+	margin: 0 0 10px
+.lc-excerpt
+	font-size: 95%
+	line-height: normal
+
+
+// registration
+// registration tab
+$regSize: 100px
+$stepSize: 45px
+$stepBg: #cccccc
+$stepActiveBg: $dominosBlueLight
+.tab-steps
+	width: 100%
+	height: $regSize
+	position: relative
+	&::before
+		content: " "
+		width: 80%
+		display: block
+		position: absolute
+		left: 10%
+		top: $stepSize / 2
+		border-top: 5px solid $white
+	.tab-step
+		width: $regSize
+		height: $regSize
+		position: absolute
+		overflow: hidden
+		&:first-child
+			left: 0
+		&:nth-child(2)
+			left: 50%
+			margin-left: (-$regSize / 2)
+		&:last-child
+			right: 0
+		&.active
+			.step
+				background: transparent
+				.step-no
+					background: $stepActiveBg
+				&:hover
+					.step-no
+						background: lighten($stepActiveBg, 5%)
+	.step
+		padding: 0
+		display: block
+		text-align: center
+		background: transparent
+		font-family: $fontNormal
+		&:hover
+			background: transparent
+			.step-no
+				background: lighten($stepBg, 5%)
+		.step-no
+			width: $stepSize
+			height: $stepSize
+			margin: 0 auto
+			font-size: 120%
+			line-height: 2.2em
+			color: $white
+			background: $stepBg
+			+border-radius(100%)
+			+transition(all 200ms ease)
+		.step-copy
+			font-size: 80%
+			color: $normalCol
+
+// registration forms
+.tabs-content > .reg-form
+	width: 100%
+	padding: 0
+	background: #f0f5f8
+	border: 1px solid $sidebarBorder
+	.row
+		margin: 0
+	.input-box
+		padding: 20px 60px
+		border-right: 1px solid $sidebarBorder
+		background: $white
+	.info-box
+		padding: 20px
+	.pi-break
+		margin-top: 30px
+	label
+		font-size: 90%
+		font-weight: 700
+		color: $normalCol
+	.fb-btn
+		font-size: 100%
+		padding: 16px 10px
+
+.reg-hold
+	position: relative
+	.faux-section
+		width: 180px
+		padding: 15px 10px
+		position: absolute
+		left: -180px
+		top: 10px
+		background: #fafafa
+		border: 1px solid $sidebarBorder
+		+border-radius($mealRadius 0 0 $mealRadius)
+		.heado
+			margin: 0
+			text-align: right
+			font-size: 100%
+			line-height: normal
+		.sparta
+			display: block
+			font-size: 95%
+			font-style: italic
+			text-align: right
+		.faux-general
+			list-style: none
+			padding: 0
+			margin: 0
+			text-align: right
+			li
+				padding-top: 15px
+				line-height: normal
+				font-size: 80%
+				color: #aaaaaa
+				b
+					font-size: 120%
+					color: $normalCol

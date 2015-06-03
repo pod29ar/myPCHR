@@ -1,0 +1,317 @@
+body.freeze
+	position: fixed
+
+.menu-head
+	position: relative
+	// margin-top: 55px
+	margin-bottom: 25px
+	text-align: center
+	&::before
+		content: " "
+		width: 100%
+		position: absolute
+		top: 50%
+		margin-top: -3px
+		display: block
+		border-top: 6px solid $menuHeadLine
+	.mh-title
+		padding: 0 30px
+		position: relative
+		margin: 0
+		display: inline-block
+		text-transform: uppercase
+		color: $dominosBlueLight
+		background: $bodyBg
+
+
+// sidebar filter
+.side-filter
+	margin: 0
+	padding: 0
+	list-style: none
+	background: $white
+	border: 1px solid $sidebarBorder
+	+border-radius($mealRadius)
+	li
+		padding: 10px 15px
+		font-size: 80%
+		border-bottom: 1px solid $sidebarBorder
+		&:last-child,
+		&.directive
+			border: none
+		a
+			display: block
+			color: $subtleCol
+			&:hover
+				color: $normalCol
+		&.current
+			background: $dominosRed
+			a
+				color: $white
+
+// deal head
+.deal-head
+	padding: 0
+	margin-top: 0
+	margin-bottom: 10px
+	font-family: $fontNormal
+	font-size: 80%
+	color: $dominosBlueLight
+	line-height: 250%
+	background: $white
+	&.custom-pizza
+		span
+			background: url('../img/new_home/customize_head_span.png') no-repeat right center $dominosPurple
+	span
+		padding: 5px 22px 5px 10px
+		position: relative
+		display: inline-block
+		margin-right: 10px
+		font-family: $fontHeavy
+		font-size: 150%
+		color: $white
+		background: url('../img/new_home/deal_head_span.png') no-repeat right center $dominosBlueLight
+.deal
+	float: left !important
+	> a
+		margin-bottom: 20px
+		display: block
+		background: $white
+		border: 1px solid $sidebarBorder
+		overflow: hidden
+		+border-radius($mealRadius)
+		&.active
+			border-color: #c4a397
+			+box-shadow(0 0 5px 0 rgba($black, .2))
+	.meal-name,
+	.meal-deal,
+	.meal-footer
+		padding: 10px 20px
+	.meal-name
+		padding-top: 20px
+		text-align: center
+		color: $dominosBlueLight
+	.meal-deal
+		margin: 0
+		list-style: none
+		.md-item
+			margin: 5px 0
+			padding: 0
+		.md-icon
+			width: 100%
+			height: 0
+			padding-bottom: 100%
+			position: relative
+			margin-top: -8px
+			overflow: hidden
+			.mdi
+				max-width: none
+				height: 100%
+				position: absolute
+				left: 0
+				top: 0
+				&.xl
+					left: 0
+					top: 0
+				&.lg
+					left: -100px
+					top: -4px
+				&.rg
+					left: -200px
+					top: -10px
+				&.sd
+					left: -300px
+					top: -12px
+				&.bv
+					left: -400px
+					top: -12px
+		.md-amount,
+		.md-desc
+			margin: 0
+			display: inline-block
+		.md-amount
+			width: 10%
+			color: $dominosRed
+			text-align: right
+		.md-desc
+			width: 85%
+			// font-size: 100%
+	.meal-footer
+		padding-bottom: 20px
+		text-align: center
+		background: $subtleWhite
+		border-top: 1px solid $sidebarBorder
+		.mf-price
+			margin: 10px 0 0
+			// font-size: 120%
+			line-height: normal
+			color: $dominosRed
+			span
+				font-family: $fontNormal
+				font-style: italic
+				color: $dominosBlueLight
+				margin: 0 5px
+		.mf-save
+			margin: 0
+			// font-size: 100%
+			line-height: normal
+			font-style: italic
+			color: #ee3e40
+			span
+				// margin: 0 5px
+				font-size: 80%
+				font-family: $fontNormal
+				font-weight: 700
+				color: $dominosBlueLight
+
+
+// mealset lightbox
+.meal-lightbox
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 100%
+	background: $lightboxBg
+	overflow: hidden
+	z-index: 96
+	+transition(all 600ms ceaser($easeInBack))
+	+box-shadow(0 0 15px 0 rgba($black, .5))
+	&.active
+		top: 0
+	.lb-head
+		padding-top: 10px
+		padding-bottom: 10px
+		background: $white
+		.lb-name
+			padding: 15px 5px
+			font-size: 110%
+			font-weight: 700
+		.lb-price
+			margin: 0
+			padding: 8px
+			color: $dominosRed
+			span
+				padding-right: 5px
+				font-family: $fontNormal
+				font-weight: 300
+				color: $intoGray
+		.button
+			margin-bottom: 0
+			margin-left: 10px
+			padding: 15px 25px
+			+border-radius($mealRadius)
+	.lb-boxes-container
+		width: 100%
+		height: 100%
+		padding-top: 68px
+		padding-bottom: 0
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		+transition(all 600ms ceaser($easeInQuad))
+		&.level-two
+			background: $bodyBg
+			left: 100%
+		.bs-container
+			max-width: 63.2em
+			position: absolute
+			left: 50%
+			z-index: 10
+			.bs-box
+				background: $bodyBg
+				margin-left: -50%
+				+box-shadow(0 5px 5px -5px rgba($black, .2))
+			.spc-button
+				margin: 20px 0
+	.lb-boxes
+		width: 100%
+		height: 100%
+		padding-top: 90px
+		padding-bottom: 20px
+		overflow: auto
+		.lb-content
+			margin-bottom: 10px
+			&.lb-preset
+				display: none
+			.lb-title
+				color: $white
+				text-align: center
+				text-transform: uppercase
+			.lb-box
+				width: 100%
+				height: 0
+				padding-bottom: 100%
+				background: $white
+				overflow: hidden
+				position: relative
+				+border-radius($mealRadius)
+				+box-shadow(0 0 0 1px darken($lightboxBg, 10%))
+				.lb-preview
+					height: 160px
+					padding: 10px
+					position: relative
+					background-image: url('../img/new_home/meals_icon_sprite.png')
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					+transition(all 200ms ease)
+					&.pz
+						background-position: 69px 30px
+					&.sd
+						background-position: -131px 30px
+					&.bv
+						background-position: -326px 30px
+					.lbp-edit
+						width: 100%
+						height: 100%
+						position: absolute
+						top: 0
+						left: 0
+						margin: 0
+						text-align: center
+						.lbpe
+							width: 100%
+							height: 100%
+							padding: 60px 0 0
+							display: block
+							color: $dominosRed
+							background: rgba($black, 0)
+					&:hover,
+					&:active
+						background-position-y: 10px
+						.lbpe
+							padding-top: 100px
+							color: darken($dominosRed, 10%)
+							background: rgba($black, .1)
+					&.edited
+						background-position: 50% 50%
+						background-size: cover
+						.lbp-edit
+							text-align: left
+							.lbpe
+								padding: 5px 10px
+						&:hover
+							background-position-y: -10px
+							.lbpe
+								padding: 10px 15px
+				.lb-desc
+					width: 100%
+					height: 80px
+					padding: 10px
+					position: absolute
+					bottom: 0
+					background: $subtleWhite
+					border-top: 1px solid $sidebarBorder
+					.lbd-name,
+					.lbd-size,
+					.lbd-crust
+						font-family: $fontNormal
+						font-weight: 700
+					.lbd-name
+						color: $dominosRed
+						margin-bottom: 0
+					.lbd-size
+						color: $dominosBlue
+						margin-right: 30px
+					.lbd-crust
+						color: $subtleCol

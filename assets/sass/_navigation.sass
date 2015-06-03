@@ -1,0 +1,234 @@
+// header
+.navi
+	z-index: 95
+.nvb
+	.top-bar,
+	.top-bar-section ul,
+	.top-bar-section ul li,
+	.top-bar-section > ul > li > a:not(.button)
+		background: transparent
+		font-family: $fontNormal
+.nvb-user
+	background: $toolUserBg
+	border-bottom: 1px solid $toolUserBorder
+	.top-bar-section
+		padding-left: 180px
+		> ul > li
+			padding: 4px
+			> a,
+			> a:not(.button)
+				line-height: 35px
+				border: 1px solid lighten($toolUserBg, 5%)
+				+border-radius($globalRadius)
+		ul li
+			a,
+			a:not(.button)
+				&:hover
+					background: $toolUserBorder
+	.dropdown
+		margin-left: 5px
+		margin-top: 5px
+		border: 1px solid $toolMenuBorder
+		border-top: none
+		overflow: hidden
+		+border-radius(0 0 $globalRadius $globalRadius)
+		li a:not(.button)
+			color: $toolMenuBorder
+			background: $white
+	.profile-pic
+		width: 37px
+		height: 37px
+		overflow: hidden
+		+border-radius(100%)
+		.pp-image
+			width: 100%
+			height: 100%
+.nvb-menu
+	margin-bottom: 30px
+	background: $toolMenuBg
+	border-bottom: 1px solid $toolMenuBorder
+	+box-shadow(0 0 10px 0 rgba($black, .1))
+	.top-bar
+		height: auto
+		padding: 10px 0
+	.title-area
+		.name
+			img
+				margin-top: -45px
+	.top-bar-section
+		ul li
+			a,
+			a:not(.button)
+				font-size: 95%
+				font-weight: 700
+				color: $toolMenuCol
+				&:hover
+					background: darken($toolMenuBg, 5%)
+		.howto-container
+			margin-right: 30px
+			li
+				a
+					top: 0
+					padding: 0 15px
+					font-size: 95%
+					font-weight: 700 !important
+					line-height: 43px
+				&:first-child a
+					color: $dominosRed
+					background: $white
+					border: 1px solid $toolMenuBorder
+					border-right: none
+					+border-radius($globalRadius 0 0 $globalRadius)
+					&:hover
+						background: darken($white, 8%)
+				&:last-child a
+					color: $white
+					background: $dominosRed
+					border: 1px solid darken($dominosRed, 8%)
+					+border-radius(0 $globalRadius $globalRadius 0)
+					&:hover
+						background: darken($dominosRed, 8%)
+		.cart-container
+			li a:not(.button)
+				font-size: 85%
+				line-height: normal
+				text-align: right
+				color: $dominosRed
+				span
+					display: block
+					line-height: 22px
+				.prc-cont
+					color: $toolMenuBorder
+					font-weight: normal
+
+
+// footer
+.footer
+	width: 100%
+	margin-top: $footerMargin
+	padding: 80px 0
+	color: $footerCol
+	background: $footerBg
+	p
+		font-size: 80%
+	.row-top
+		margin-bottom: $breather
+	.logo-container,
+	.copy-container
+		float: left
+	.logo-container
+		width: 90px
+		margin-right: 20px
+	.copy-container
+		margin-top: 15px
+		.cc-copy
+			margin: 0
+			color: $white
+			line-height: normal
+			&:first-child
+				letter-spacing: 0.8px
+			&:last-child
+				letter-spacing: -0.5px
+	.right-top,
+	.right-btm
+		text-align: center
+	// footer nav
+	.top-bar,
+	.top-bar-section ul,
+	.top-bar-section li:not(.has-form) a:not(.button)
+		background: transparent
+	.top-bar-section li:not(.has-form) a:not(.button)
+		padding: 0
+		padding-right: 20px
+		font-size: 80%
+		font-weight: 700
+		color: $buttonTertiary
+		&:hover
+			color: $dominosBlueLight
+	.left-btm p
+		margin: 0
+	// footer social network
+	.smb-item
+		padding: 0 5px
+		a
+			width: 100%
+			height: 0
+			padding-bottom: 100%
+			display: block
+			background: $white
+			+border-radius(15px)
+			&.fb
+				color: $facebookBlue
+			&.gp
+				color: $normalCol
+			&.ig
+				color: $subtleCol
+			&.tw
+				color: #61ccf5
+			i
+				padding-top: 18px
+
+.nvb .top-bar-section ul.dropdown.cart-drop
+	width: 500px
+	// margin-top: 5px
+	background: $white
+	border: 1px solid $sidebarBorder
+	overflow: hidden
+	+border-radius($mealRadius)
+	+box-shadow(0 0 3px 1px rgba($black, .2))
+	.cd-head
+		border-bottom: 1px solid $sidebarBorder
+		h4
+			margin: 0
+			padding: 10px 5px
+			font-family: $fontNormal
+			font-size: 150%
+			font-weight: 700
+		.button
+			width: 100%
+			margin: 10px 0
+			@extend .button-tertiary
+	.cd-content
+		.cdc-items
+			margin: 0
+			padding: 0
+			list-style: none
+		.cdc-item
+			padding-top: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid $sidebarBorder
+			.cdc-image
+				width: 100%
+				height: 90px
+				img
+					width: 100%
+					height: 100%
+			.cdc-detail
+				.cdc-name
+					margin: 0
+					font-family: $fontNormal
+					font-size: 120%
+					font-weight: 700
+					color: $dominosBlueLight
+				.cdc-desc
+					margin: 0
+					font-size: 90%
+					color: $subtleCol
+				.cdc-edit
+					padding: 0
+					font-weight: 300
+					color: $dominosBlueLight
+					background: none
+	.cd-foot
+		p
+			margin: 0
+			padding: 10px 5px
+		.cdc-total
+			padding: 10px 0
+	.cdc-price,
+	.cdc-total
+		margin: 0
+		text-align: right
+		font-family: $fontNormal
+		font-size: 110%
+		font-weight: 700

@@ -1,0 +1,567 @@
+.page-menu
+	margin-top: 20px
+	margin-bottom: 50px
+.deep-menu
+	background: $dominosBlueLight
+	overflow: hidden
+	border: 1px solid $sidebarBorder
+	+border-radius($mealRadius)
+	.dm-item
+		padding: 0
+		text-align: center
+		.dm-anchor
+			padding: 20px 10px
+			display: block
+			color: $white
+		&:hover,
+		&:focus
+			background: lighten($dominosBlueLight, 5%)
+		&.active
+			background: $dominosRed
+			.dm-anchor
+				font-weight: 700
+				color: $white
+
+
+$dominosYellow: #ecc85e
+$dominosBrownish: #774e38
+
+$cardBackground: $dominosBlue
+.mch-indicator
+	margin: 0
+	position: absolute
+	left: 50%
+	bottom: -20px
+.mch-indicate
+	margin: 0
+	margin-left: -50%
+	padding: 0
+	padding-top: 2px
+	list-style: none
+.mch-item
+	width: 30px
+	height: 30px
+	margin: -2px 2px 0
+	float: left
+	overflow: hidden
+	border: 2px solid $dominosBlueLight
+	background: $white
+	+border-radius(100%)
+	+sauce-image(false)
+	+meat-image(false)
+.mch-indicator
+	.mch-item
+		+sauce-image(true)
+		+meat-image(true)
+.menu-card
+	width: 100%
+	height: 300px
+	position: relative
+	margin-bottom: 20px
+	background: $cardBackground
+	&.selected
+		&,
+		.mc-head
+			background: $dominosGreen
+	.mc-img-wrapper
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		overflow: hidden
+		// border: 1px solid #efefef
+		.mc-image
+			width: 100%
+			min-height: 100%
+			// height: auto
+			// margin-top: 35%
+	.mc-head
+		width: 100%
+		height: auto
+		padding: 10px
+		position: absolute
+		left: 0
+		top: 0
+		text-align: center
+		color: $white
+		background: $cardBackground
+		.mch-name
+			margin: 0
+			padding: 5px 25px
+			font-size: 125%
+			text-transform: uppercase
+			color: $white
+			line-height: 24px
+		.mch-headbutt
+			padding: 4px 9px
+			display: block
+			position: absolute
+			color: $cardBackground
+			right: 8px
+			top: 50%
+			margin-top: -12px
+			background: $white
+			overflow: hidden
+			+border-radius(100%)
+
+	.mc-indicator
+		padding: 5px
+		position: absolute
+		left: -4px
+		top: -7px
+		font-size: 90%
+		color: $dominosBrownish
+		background: $dominosYellow
+		// border: 2px solid $dominosBrownish
+		&::after
+			content: " "
+			width: 0
+			height: 0
+			border-left: 7px solid $dominosYellow
+			border-top: 12px solid transparent
+			border-bottom: 12px solid transparent
+			position: absolute
+			right: -7px
+			top: 0
+
+	.mc-order,
+	.mc-ordinal
+		width: 94%
+		position: absolute
+		bottom: 0
+		margin: 5px 3%
+		&.selected
+			background: $dominosGreen
+
+
+	// overriding for pizza back card
+	&.mc-back
+		// overflow: hidden
+		.mc-head
+			position: relative
+		.mch-headbutt
+			width: auto
+			padding: 4px 5px 4px 6px
+			bottom: auto
+			margin: 0
+			margin-top: -12px
+
+		// forms
+		.order-form
+			margin: 0
+			padding: 10px
+			select
+				margin-bottom: 10px
+			.button
+				width: 100%
+				padding: 12px 10px
+				font-size: 90%
+				margin-bottom: 10px
+				&.btn-edtp
+					background: $dominosRed
+					&:hover
+						background: darken($dominosRed, 10%)
+				&.btn-chse
+					color: $dominosBrownish
+					background: $dominosYellow
+					&:hover
+						background: darken($dominosYellow, 10%)
+			label
+				margin-top: 10px
+				margin-bottom: 5px
+				color: $white
+				.pz-price
+					display: inline-block
+					margin: 0
+					font-size: 130%
+					font-family: $fontHeavy
+					line-height: 0
+					color: $white
+			.pz-quantity
+				input
+					height: auto
+					padding: 9px 5px 10px
+					text-align: center
+					+border-radius(0)
+				.button
+					font-size: 80%
+					padding: 12px 0 13px
+					height: auto
+					line-height: normal
+			.pz-review
+				.rv-quant
+					padding: 5px 0
+					margin: 5px 0 0
+					text-align: center
+					background: darken($cardBackground, 10%)
+					+border-radius($globalRadius $globalRadius 0 0)
+
+// .card-box
+.card-holder
+	width: 100%
+	position: relative
+	+perspective(1000)
+	// +transform(preserve-3d)
+	.mc-front,
+	.mc-back
+		+backface-visibility(hidden)
+		+transition(all 400ms ease)
+		+transform(preserve-3d)
+	.mc-front
+		position: relative
+		z-index: 1
+	.mc-back
+		position: absolute
+		top: 0
+		left: 0
+		+transform(rotateY(180deg))
+	&.flipped
+		.mc-front
+			+transform(rotateY(-180deg))
+		.mc-back
+			z-index: 1
+			+transform(rotateY(0deg))
+
+.reveal-modal-bg
+	background: rgba(darken($dominosBlue, 20%), .9)
+.item-modal
+	// max-height: 600px
+	padding: 0
+	overflow: hidden
+	+border-radius($mealRadius)
+	.id-header
+		background: $subtleWhite
+		text-align: center
+		.idh-copy
+			margin: 0
+			padding: 10px
+			font-family: $fontNormal
+			font-size: 120%
+	> .row
+		max-width: none
+.item-detail
+	.row
+		max-width: 100%
+	.id-excerpt
+		height: 400px
+		padding: 50px 20px 20px
+		position: relative
+		background: lighten($dominosYellow, 20%)
+		text-align: center
+		.id-name
+			font-size: 2.6em
+		.id-desc
+			font-size: 1.3em
+			line-height: normal
+		.mch-indicator
+			top: 10px
+	.id-image
+		height: 400px
+		margin-bottom: 5px
+		overflow: hidden
+		.id-preview
+			max-width: auto
+			min-width: 100%
+			margin: 0 auto
+			display: block
+
+
+.et-content
+	padding: 20px
+	label
+		margin: 0
+		color: $subtleCol
+		font-weight: 700
+		text-align: right
+		padding-right: 5px
+	.etc-left
+		border-right: 1px solid $sidebarBorder
+	.et-warning
+		background: lighten($dominosYellow, 20%)
+		color: $subtleCol
+		border: none
+		display: none
+		+transition(all 200ms ease)
+	.et-image
+		width: 100%
+		height: 50px
+		background-image: url('../img/misc/edit_topping_sprite.png')
+		background-repeat: no-repeat
+		background-position: 10px 5px
+		&.cheese
+			background-position: -212px 5px
+		&.butter-oil
+			background-position: -330px 5px
+		&.beef-pepperoni
+			background-position: -210px -79px
+		&.roasted-chicken
+			background-position: -90px -75px
+		&.beef-sausage
+			background-position: 15px -75px
+		&.ground-beef
+			background-position: -321px -75px
+		&.shredded-chicken
+			background-position: 20px -150px
+		&.chicken-pepperoni
+			background-position: -90px -152px
+		&.chicken-poutporri
+			background-position: -208px -154px
+		&.ikan-bilis
+			background-position: 12px -225px
+		&.tuna-chunk
+			background-position: -82px -225px
+		&.prawn
+			background-position: -204px -225px
+		&.crab-filament
+			background-position: -320px -223px
+		&.fresh-mushroom
+			background-position: 13px -302px
+		&.sliced-onions
+			background-position: -87px -302px
+		&.diced-tomato
+			background-position: -205px -302px
+		&.spinach
+			background-position: -319px -302px
+		&.green-pepper
+			background-position: 14px -373px
+		&.riped-olives
+			background-position: -86px -373px
+		&.pineapple
+			background-position: -207px -373px
+		&.pickled-red-chilli
+			background-position: -313px -373px
+	.et-row > ul > li
+		padding: 5px
+		ul
+			margin: 0
+	.deal-head
+		margin-top: 10px
+		margin-bottom: 0
+		background: $subtleWhite
+	.et-block
+		li
+			padding: 0 5px
+	.ets-info
+		p
+			margin: 0
+			padding: 20px 0
+			text-align: right
+			.ets-total
+				color: $dominosRed
+				font-weight: 700
+		.ets-confirm
+			margin: 0
+			width: 100%
+			padding: 15px 10px
+.et-counter
+	.etc-number
+		height: auto
+		margin: 0
+		padding: 14px 5px 15px
+		text-align: center
+		color: $dominosBlue
+		background-color: $white !important
+		border: 1px solid $dominosBlue
+		+border-radius($globalRadius 0 0 $globalRadius)
+		+box-shadow(none)
+	.etc-button-holder
+		float: left
+		.button
+			width: 100%
+			height: 25px
+			margin: 0
+			padding: 0
+			font-size: 80%
+			background: $dominosBlueLight
+			border: 1px solid $dominosBlue
+			border-left: none
+			float: left
+			&:first-child
+				+border-radius(0 $globalRadius 0 0)
+			&:last-child
+				border-top: none
+				+border-radius(0 0 $globalRadius 0)
+.ets-topping
+	max-height: 350px
+	overflow-x: hidden
+	overflow-y: auto
+	border-bottom: 2px solid $grayWhite
+.et-surcharge
+	.topping-name,
+	.topping-price
+		margin: 0
+		font-weight: bold
+	.topping-name
+		color: $dominosGreen
+	.topping-price
+		text-align: right
+		color: $dominosRed
+	.topping-meta
+		margin-bottom: 10px
+		color: #aaaaaa
+		.unit-price
+			font-weight: bold
+.top-line
+	padding: 0
+	border-bottom: 1px solid $grayWhite
+
+.pz-tabs
+	padding: 0 10px
+	dd
+		a
+			padding: 10px 15px
+			font-size: 80%
+			background: $white
+			color: $subtleCol
+			border: 1px solid $sidebarBorder
+			border-bottom-color: $dominosBlueLight
+			+border-radius($mealRadius $mealRadius 0 0)
+		&.active a
+			color: $white
+			background: $dominosBlueLight
+			border-color: $dominosBlueLight
+// .pz-content
+.filter
+	margin-bottom: 30px
+	background: $white
+	border: 1px solid $dominosBlueLight
+	overflow: hidden
+	+border-radius($mealRadius)
+	.filter-item
+		padding: 30px 15px 20px
+		text-align: center
+		cursor: pointer
+		&:hover,
+		&.active
+			background: $subtleWhite
+			.mch-item
+				+sauce-image(true)
+				+meat-image(true)
+		.mch-item
+			margin: 0 auto
+			display: block
+			float: none
+		.fi-desc
+			margin: 5px 0 0
+			font-size: 80%
+			color: $subtleCol
+			float: none
+	&.longform
+		height: 145px
+		.filter-item
+			height: 145px
+	&.modular
+		height: 125px
+		.filter-item
+			height: 125px
+
+.half-lightbox
+	left: 0
+	.step-head
+		color: $white
+	.lb-head,
+	.lb-boxes,
+	.lb-foot
+		> .row
+			max-width: 62.5em
+			margin: 0 auto
+	.lb-boxes-container
+		padding-bottom: 103px
+	.lb-foot
+		padding-top: 10px
+		padding-bottom: 10px
+		position: absolute
+		bottom: 0
+		width: 100%
+		background: $dominosBlueLight
+		.grider
+			li
+				padding: 5px
+		p,
+		label,
+		.pz-price
+			color: $white
+		.button,
+		input,
+		p
+			margin: 0
+		.button:not(.pzq-btn)
+			width: 100%
+			padding: 11px 5px 10px
+			font-size: 90%
+		.pz-price
+			margin: 0
+			margin-top: -8px
+			display: inline-block
+		.spc-pic
+			position: relative
+		.pic-holder
+			width: 100%
+			height: 150px
+			position: absolute
+			left: 0
+			top: -57px
+			padding: 1px
+			background: $white
+			.ph-left,
+			.ph-right
+				width: 50%
+				height: 100%
+				float: left
+				overflow: hidden
+				img
+					max-width: none
+					min-width: 100%
+					height: 100%
+			.ph-right
+				padding-left: 1px
+		.pz-one-name
+			text-align: right
+
+$dominosFadeRed: #dd3645
+.card-box
+	&.custom-pizza
+		.mc-head
+			background: $dominosPurple
+		.menu-card
+			background: $dominosPurple
+			.pz-review
+				.rv-quant
+					background: darken($dominosPurple, 10%)
+		.mch-headbutt
+			color: $dominosPurple
+	&.make-own
+		.mc-head
+			background: $dominosFadeRed
+		.menu-card
+			background: $dominosFadeRed
+			.pz-review
+				.rv-quant
+					background: darken($dominosRed, 10%)
+		.mch-headbutt
+			color: $dominosFadeRed
+	&.custom-pizza,
+	&.make-own
+		.menu-card.mc-back .order-form .button.btn-edtp
+			background: #29ad61
+			&:hover
+				background: darken(#29ad61, 10%)
+	&.longform
+		.button
+			background: $dominosGreen
+			color: $white
+			&:hover
+				background: darken($dominosGreen, 10%)
+
+.tooltip
+	width: 210px !important
+	margin-left: -190px
+	color: #666
+	background: $white
+	border: 1px solid #e0e0e0
+	+border-radius($globalRadius)
+	> .nub
+		border-color: transparent transparent $white transparent
+		left: auto
+		right: 0

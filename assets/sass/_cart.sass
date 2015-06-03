@@ -1,0 +1,267 @@
+.cart-section-head
+	background: $black
+	padding: 10px 20px
+	margin-bottom: 20px
+	.csh-text
+		padding-top: 13px
+		padding-bottom: 13px
+		display: inline-block
+		font-family: $fontHeavy
+		font-size: 150%
+		color: $white
+		&.caret
+			padding-top: 5px
+			padding-bottom: 8px
+			margin-left: 20px
+			font-size: 200%
+			cursor: pointer
+			+transition(all 200ms ease)
+			&.toggled
+				+rotate(180deg)
+	.et-counter
+		width: 90px !important
+		display: inline-block
+	.crt
+		padding: 15px 30px
+		margin: 0 30px
+		background: $black
+		color: $white
+		border: 1px solid $dominosBlueLight
+		display: inline-block
+		&:hover,
+		&:active,
+		&:focus
+			background: lighten($black, 15%)
+		&.cart-edit
+			margin-right: 0
+
+.carter-head
+	.button
+		margin-right: 20px
+		&.ch-exco
+			margin-right: 0
+	.ch-chd
+		background: $dominosBlue
+		color: $white
+		&:hover,
+		&:active,
+		&:focus
+			background: darken($dominosBlue, 10%)
+	.ch-btm
+		background: $dominosRed
+		color: $white
+		&:hover,
+		&:active,
+		&:focus
+			background: darken($dominosRed, 10%)
+	.ch-exco
+		width: 51px
+		height: 51px
+		background: $white
+		color: $subtleCol
+		border: 1px solid $sidebarBorder
+		position: relative
+		.fa
+			position: absolute
+			font-size: 200%
+			+transition(all 200ms ease)
+			&.fa-caret-down
+				top: 8px
+				left: 24px
+			&.fa-angle-down
+				top: 14px
+				left: 22.5px
+		&:hover,
+		&:active,
+		&:focus
+			background: darken($white, 10%)
+		&.toggled
+			.fa
+				+rotate(180deg)
+				&.fa-caret-down
+					top: 14px
+				&.fa-angle-down
+					top: 8px
+					left: 21.5px
+
+.spc-menu
+	background: $white
+	border: 2px dashed $grayWhite
+	+transition(all 100ms ease)
+	&:hover
+		background: $bodyBg
+		.card-anchor
+			color: darken($subtleCol, 10%)
+	.card-anchor
+		height: 100%
+		width: 100%
+		padding-top: 200px
+		display: block
+		position: relative
+		font-size: 100%
+		color: $subtleCol
+		text-align: center
+		background-image: url('../img/new_home/meals_icon_sprite.png')
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		+transition(all 200ms ease)
+		&.pz
+			background-position-x: 57px
+		&.sd
+			background-position-x: -143px
+		&.bv
+			background-position-x: -343px
+
+.cart-pricer
+	margin-top: -30px
+	margin-bottom: 20px
+	background: $dominosBlue
+	overflow: hidden
+	+border-radius($globalRadius)
+	> .row
+		margin: 0
+	.promo-display,
+	.price-display
+		height: 350px
+		margin: 0
+	.promo-display
+		background: $dominosBlue
+		.pd-container
+			padding: 20px 50px
+			text-align: center
+			p
+				color: $white
+			.ec-anchor
+				background: $dominosRed
+				color: $white
+				&:hover,
+				&:active,
+				&:focus
+					background: darken($dominosRed, 10%)
+	.price-display
+		background: #252d2f
+		padding: 30px 20px
+		.table
+			background: none
+			border: none
+			width: 100%
+			tr
+				background: none
+				td
+					color: $subtleCol
+					&.price
+						text-align: right
+				&.total-price,
+				&.grand-total
+					td
+						color: $white
+		.proceed-anchor
+			width: 100%
+
+.sec-upsell
+	margin-top: 50px
+.order-clear
+	background: none
+	border: none
+
+$orangeCard: #e57e31
+.menu-card
+	.mc-split
+		width: 46%
+		padding: 15px 5px
+		position: absolute
+		bottom: 0
+		margin: 5px 2%
+		&:first-child
+			left: 0
+		&:last-child
+			left: 50%
+			background: $orangeCard
+			&:hover
+				background: darken($orangeCard, 10%)
+
+.row-card
+	width: 100% !important
+	margin-left: 0 !important
+	overflow: hidden
+$scroogeWidth: 30px
+.scrooge
+	position: relative
+	overflow: visible
+	+transition(all 200ms ease)
+	&.toggled
+		height: 0
+		overflow: hidden
+	.scroll
+		width: $scroogeWidth
+		height: 300px
+		position: absolute
+		top: 0
+		text-align: center
+		background: $bodyBg
+		border: 1px solid $sidebarBorder
+		cursor: pointer
+		&.left
+			left: (-$scroogeWidth)
+			+border-radius($mealRadius 0 0 $mealRadius)
+		&.right
+			right: (-$scroogeWidth)
+			+border-radius(0 $mealRadius $mealRadius 0)
+
+		.caret-fold
+			padding-top: 135px
+			display: block
+			font-size: 200%
+			color: $subtleCol
+
+.spc-pop
+	width: 570px
+	margin-left: -285px
+
+.row.cart-order
+	margin-left: 0
+	margin-right: 0
+.tablature
+	width: 100%
+	border: none
+	.tab-number
+		width: 5%
+		text-align: right
+	.tab-items
+		width: 45%
+	.tab-price,
+	.tab-total
+		width: 10%
+	.tab-quantity
+		width: 30%
+
+	p,
+	input,
+	button
+		margin-bottom: 0
+	.tn-number
+		text-align: right
+
+	thead
+		background: $dominosBlueLight
+		tr
+			td
+				padding-top: 13px
+				padding-bottom: 11px
+				font-weight: 300
+				color: $white
+
+	.item-desc
+		font-size: 90%
+		color: $subtleCol
+
+	.item-price,
+	.item-total
+		font-size: 100%
+	.item-price
+		color: #777777
+
+	.button
+		width: 100%
+		padding: 11px 10px 10px
+		font-size: 100%
