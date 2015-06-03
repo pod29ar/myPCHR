@@ -12,22 +12,18 @@
 
         <section class="top-bar-section">
             <?php
-            $ala_url = '<a href="' . base_url('longform#alacarte') . '" class="long-pass" data-target="#alacarte">Menu</a>';
-            $meal_url = '<a href="' . base_url('longform#meal') . '" class="long-pass" data-target="#meal">Promo Meals</a>';
+            $ala_url = '<a href="' . base_url('longform#alacarte') . '" class="long-pass" data-target="#alacarte">Health Record</a>';
+            $meal_url = '<a href="' . base_url('longform#meal') . '" class="long-pass" data-target="#meal">Appointments</a>';
             $ono_url = '<a href="' . base_url('longform#meal') . '" class="button long-pass" data-target="#meal">Order Now</a>';
             ?>
             <!-- Left Nav Section -->
             <ul class="left">
                 <li><a href="<?php echo base_url();?>"><i class="fa fa-home"></i></a></li>
-                <li><?php echo $ala_url;?></li>
-                <li><?php echo $meal_url;?></li>
-                <li><a href="#">Locate Us</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-
-            <ul class="right button-group howto-container">
-                <li><a href="#" class="button" data-reveal-id="hint-scenario">How To?</a></li>
-                <li><?php echo $ono_url;?></li>
+                <li><a href="#">Health Record</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Consultations</a></li>
+                <li><a href="#">My Child Status</a></li>
+                <li><a href="#">Important Contact</a></li>
             </ul>
         </section>
     </nav>

@@ -8,7 +8,7 @@
 	<section>
     <h2 style="font-size: 18px">The online version of your personal child health record
     </h2>
-	<img src="Wunderlist.jpg" width="670px" height="317">
+	<img src="assets/img/myPCHR/Wunderlist.jpg" width="670px" height="317">
     </section>
     </div>
 <div class="note-right">
