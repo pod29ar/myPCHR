@@ -15,7 +15,7 @@
 				<ul class="right">
 					<!-- <li><a href="#">Order History</a></li> -->
 					<!-- <li><a href="#">My Profile</a></li> -->
-					<li><a href="<?php echo base_url('signout');?>">Logout</a></li>
+					<li><a href="<?php echo base_url('signout');?>">Sign Out</a></li>
 					<li><div class="profile-pic">
 						<img src="http://placehold.it/100x100" class="pp-image">
 					</div></li>
